@@ -1,22 +1,22 @@
-body{
-padding: 0;
-background-color: #99830d7d;
+body {
+  padding: 0;
+  background-color: #99830d7d;
 }
-#calculator{
-margin-top: 70px;
-max-width: 500px;
-overflow: hidden;
-border: solid 2px;
-padding: 15px;
-border-radius: 50px;
-border-color: rgb(104, 103, 103);
-background-color: rgb(63 8 28 / 74%);
-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+#calculator {
+  margin-top: 70px;
+  max-width: 500px;
+  overflow: hidden;
+  border: solid 2px;
+  padding: 15px;
+  border-radius: 50px;
+  border-color: rgb(104, 103, 103);
+  background-color: rgb(63 8 28 / 74%);
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
 }
 #keys {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto repeat(5, 1fr); 
+  grid-template-rows: auto repeat(5, 1fr);
   gap: 5px;
 }
 
@@ -30,26 +30,27 @@ button {
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
 }
 
-button:hover{
-    color: white;
-    background-color: rgb(77, 61, 91);  
+button:hover {
+  color: white;
+  background-color: rgb(77, 61, 91);
 }
-button:active{
-    color: white;
-    background-color: rgb(169, 146, 188);  
+button:active {
+  color: white;
+  background-color: rgb(169, 146, 188);
 }
 
-#equal{
-color:white;
-background-color: rgb(198, 72, 72);
-}
-#equal:hover{
+#equal {
   color: white;
-  background-color: rgb(77, 61, 91);  
+  background-color: rgb(198, 72, 72);
+}
+#equal:hover {
+  color: white;
+  background-color: rgb(77, 61, 91);
 }
 
 #display {
-  grid-column: 1 / span 4; /* Spanning across all columns */
+  grid-column: 1 / span 4;
+  width: 98%;
   font-family: "Orbitron", sans-serif;
   font-size: 24px;
   color: black;
@@ -60,45 +61,45 @@ background-color: rgb(198, 72, 72);
   background-color: rgb(125, 164, 151);
 }
 
-.symbol{
-    background-color: rgb(192, 158, 158);
+.symbol {
+  background-color: rgb(192, 158, 158);
 }
 
 #history {
- text-align: center;
- margin-top: 30px;
- font-size: 25px;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 25px;
   font-family: "Orbitron", sans-serif;
 }
 
 @media screen and (min-width: 768px) {
-  body{
+  body {
     align-content: center;
   }
   #calculator {
-    margin-top: 50px; 
+    margin-top: 50px;
     margin-right: auto;
     margin-left: auto;
   }
 
   #keys {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  gap: 5px;
-}
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+  }
 
-#display{
+  #display {
     font-family: "Orbitron", sans-serif;
     font-size: 24px;
     color: black;
     width: calc(100% - 10px);
     max-width: 97%;
     height: 50px;
-   
+
     border-radius: 50px;
     border-color: rgb(192, 158, 158);
     margin-bottom: 20px;
     background-color: rgb(125, 164, 151);
-}
+  }
 }
