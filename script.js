@@ -42,6 +42,7 @@ buttons.forEach((btnText) => {
   if (!isNaN(btnText) || btnText === ".") {
     button.addEventListener("click", () => appendToDisplay(btnText));
   } else if (btnText === "AC") {
+    button.classList.add("symbol");
     button.addEventListener("click", clearDisplay);
   } else if (btnText === "=") {
     button.id = "equal";
