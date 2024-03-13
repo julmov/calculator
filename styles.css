@@ -16,8 +16,8 @@ body {
 #keys {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto repeat(5, 1fr);
-  gap: 5px;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 5px; /* Adjust as needed */
 }
 
 button {
@@ -49,16 +49,18 @@ button:active {
 }
 
 #display {
-  grid-column: 1 / span 4;
-  width: 98%;
   font-family: "Orbitron", sans-serif;
   font-size: 24px;
   color: black;
+  width: calc(100% - 10px); /* Adjusted width */
   height: 50px;
+  margin-right: auto; /* Pushes display to the right */
   border-radius: 50px;
   border-color: rgb(192, 158, 158);
   margin-bottom: 20px;
   background-color: rgb(125, 164, 151);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .symbol {
@@ -77,29 +79,8 @@ button:active {
     align-content: center;
   }
   #calculator {
-    margin-top: 50px;
+    margin-top: 50px; /* Remove the top margin */
     margin-right: auto;
     margin-left: auto;
-  }
-
-  #keys {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 5px;
-  }
-
-  #display {
-    font-family: "Orbitron", sans-serif;
-    font-size: 24px;
-    color: black;
-    width: calc(100% - 10px);
-    max-width: 97%;
-    height: 50px;
-
-    border-radius: 50px;
-    border-color: rgb(192, 158, 158);
-    margin-bottom: 20px;
-    background-color: rgb(125, 164, 151);
   }
 }
