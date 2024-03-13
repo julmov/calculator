@@ -53,14 +53,13 @@ background-color: rgb(198, 72, 72);
     font-size: 24px;
     color: black;
     width: calc(100% - 10px); /* Adjusted width */
+    max-width: 97%;
     height: 50px;
-    margin-right: auto; /* Pushes display to the right */
+   
     border-radius: 50px;
     border-color: rgb(192, 158, 158);
     margin-bottom: 20px;
     background-color: rgb(125, 164, 151);
-     margin-right: auto;
-    margin-left: auto;
 }
 
 .symbol{
